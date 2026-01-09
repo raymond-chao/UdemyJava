@@ -7,6 +7,19 @@ public class BankAccount {
     private String customerEmail;
     private String phoneNumber;
 
+    public BankAccount() {
+        this(123, 1000, "mjao", "mjao@mjao.com", "123");
+        System.out.println("This bankaccount called");
+    }
+
+    public BankAccount(int accountNumber, int accountBalance, String customerName, String customerEmail, String phoneNumber) {
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.phoneNumber = phoneNumber;
+    }
+
     public void desposit(int depositAmount) {
         if (accountBalance + depositAmount < 0) {
             System.out.println("Invalid deposit amount");
