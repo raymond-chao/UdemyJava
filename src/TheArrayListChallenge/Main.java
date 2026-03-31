@@ -28,7 +28,7 @@ public class Main {
     }
 
     public static void addItems(List<String> groceries){
-        System.out.println("Add items, seperate by a comma (,)");
+        System.out.println("Add items, seperate by a comma (,)"); 
         String[] items = scanner.nextLine().split(",");
 
         for (String i : items) {
